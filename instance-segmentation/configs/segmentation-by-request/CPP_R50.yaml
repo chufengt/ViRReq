@@ -1,0 +1,38 @@
+MODEL:
+  META_ARCHITECTURE: "CondInst"
+  WEIGHTS: "/your_pretrain_path/CondInst_MS_R_50_3x.pth" # coco-pretrain: https://github.com/aim-uofa/AdelaiDet/blob/master/configs/CondInst/README.md
+  MASK_ON: True
+  BACKBONE:
+    NAME: "build_fcos_resnet_fpn_backbone"
+  RESNETS:
+    DEPTH: 50
+    OUT_FEATURES: ["res3", "res4", "res5"]
+  FPN:
+    IN_FEATURES: ["res3", "res4", "res5"]
+  PROPOSAL_GENERATOR:
+    NAME: "FCOS"
+  FCOS:
+    NUM_CLASSES: 8
+    THRESH_WITH_CTR: True
+    USE_SCALE: True
+    CENTER_SAMPLE: False # set False if using mask sampling
+  CONDINST:
+    MAX_PROPOSALS: 500
+DATASETS:
+  TRAIN: ("cityscapes_fine_instance_seg_train",)
+  TEST: ("cityscapes_fine_instance_seg_val",)
+SOLVER:
+  BASE_LR: 0.01
+  STEPS: (18000,)
+  MAX_ITER: 24000
+  IMS_PER_BATCH: 8
+TEST:
+  EVAL_PERIOD: 24000
+INPUT:
+  MIN_SIZE_TRAIN: (800, 832, 864, 896, 928, 960, 992, 1024)
+  MIN_SIZE_TRAIN_SAMPLING: "choice"
+  MIN_SIZE_TEST: 1024
+  MAX_SIZE_TRAIN: 2048
+  MAX_SIZE_TEST: 2048
+    
+OUTPUT_DIR: "training_dir/citys_condinst_r50"

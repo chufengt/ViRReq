@@ -1,0 +1,44 @@
+MODEL:
+  META_ARCHITECTURE: "CondInst"
+  WEIGHTS: "/your_pretrain_path/CondInst_MS_R_50_3x.pth" # coco-pretrain: https://github.com/aim-uofa/AdelaiDet/blob/master/configs/CondInst/README.md
+  MASK_ON: True
+  BACKBONE:
+    NAME: "build_fcos_resnet_fpn_backbone"
+  RESNETS:
+    DEPTH: 50
+    OUT_FEATURES: ["res3", "res4", "res5"]
+  FPN:
+    IN_FEATURES: ["res3", "res4", "res5"]
+  PROPOSAL_GENERATOR:
+    NAME: "FCOS"
+  FCOS:
+    NUM_CLASSES: 100
+    THRESH_WITH_CTR: True
+    USE_SCALE: True
+    CENTER_SAMPLE: False # set False if using mask sampling
+  CONDINST:
+    MAX_PROPOSALS: 1000
+DATASETS:
+  TRAIN: ("ade20k_instance_train",)
+  TEST: ("ade20k_instance_val",)
+SOLVER:
+  BASE_LR: 0.01
+  STEPS: (30000,)
+  MAX_ITER: 40000 # 38 epochs
+  IMS_PER_BATCH: 16
+TEST:
+  EVAL_PERIOD: 5000
+INPUT: 
+  # partially follow mask2former to use random cropping: https://github.com/facebookresearch/Mask2Former
+  MIN_SIZE_TRAIN: (320, 384, 448, 512, 576, 640, 704, 768, 832, 896, 960, 1024, 1088, 1152, 1216, 1280)
+  MIN_SIZE_TRAIN_SAMPLING: "choice"
+  MIN_SIZE_TEST: 640
+  MAX_SIZE_TRAIN: 2560
+  MAX_SIZE_TEST: 2560
+  MASK_FORMAT: "bitmask"
+  CROP:
+    ENABLED: True
+    TYPE: "absolute"
+    SIZE: (640, 640)
+
+OUTPUT_DIR: "training_dir/ade_condinst_r50_crop"
