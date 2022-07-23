@@ -10,7 +10,7 @@ Contact: chufeng.t@foxmail.com or tcf18@mails.tsinghua.edu.cn
 
 This project is built upon several open-source toolboxes, follow the default instruction to install:
 
-- [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) for whole-to-part semantic segmentation (Type-I requests): follow [[INSTALL.md](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/en/get_started.md#installation)] to install the required packages and build the project locally (under folder [whole-to-part-semantic-segmentation](https://github.com/chufengt/Visual-Recognition-by-Request/tree/main/whole-to-part-semantic-segmentation)).
+- [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) for whole-to-part semantic segmentation (Type-I requests): follow [INSTALL.md](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/en/get_started.md#installation)] to install the required packages and build the project locally (under folder `whole-to-part-semantic-segmentation`).
 
 - [AdelaiDet](https://github.com/aim-uofa/AdelaiDet) [[INSTALL](https://github.com/aim-uofa/AdelaiDet#installation)]: for instance segmentation (Type-II requests).
 
