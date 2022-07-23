@@ -1,6 +1,6 @@
 # Visual-Recognition-by-Request
 
-Code for the paper "Visual Recognition by Request". [[arXiv]](https://arxiv.org/coming_soon)
+Code for the paper "Visual Recognition by Request" [[arXiv]](https://arxiv.org/coming_soon).
 
 Contact: chufeng.t@foxmail.com or tcf18@mails.tsinghua.edu.cn
 
@@ -8,17 +8,26 @@ Contact: chufeng.t@foxmail.com or tcf18@mails.tsinghua.edu.cn
 
 ## Installation
 
-This project is built upon several open-source toolboxes, follow the instruction to install:
+This project is built upon several open-source toolboxes, follow the default instruction to install:
 
-- [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) [[Install](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/en/get_started.md#installation)]
+- [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) [[INSTALL](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/en/get_started.md#installation)]: for whole-to-part semantic segmentation (Type-I requests).
 
-- [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) [[Install](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/en/get_started.md#installation)]
+- [AdelaiDet](https://github.com/aim-uofa/AdelaiDet) [[INSTALL](https://github.com/aim-uofa/AdelaiDet#installation)]: for instance segmentation (Type-II requests).
 
+- [CLIP](https://github.com/openai/CLIP) [[INSTALL](https://github.com/openai/CLIP#usage)]: for text features.
+
+Other requirements:
+
+```
+pip install cityscapesscripts
+pip install panoptic_parts
+```
 
 ## Data Preparation
 
+- Cityscapes-Panoptic-Parts (CPP): [introduction](https://arxiv.org/abs/2004.07944), [download](https://www.cityscapes-dataset.com/downloads/)
 
-
+- ADE20K (with Parts): [introduction](https://groups.csail.mit.edu/vision/datasets/ADE20K/)
 
 ## Reference
 
