@@ -10,7 +10,7 @@ Contact: chufeng.t@foxmail.com or tcf18@mails.tsinghua.edu.cn
 
 This project is built upon several open-source toolboxes, follow the default instruction to install:
 
-- [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) [[INSTALL](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/en/get_started.md#installation)]: for whole-to-part semantic segmentation (Type-I requests).
+[MMSegmentation](https://github.com/open-mmlab/mmsegmentation) [[INSTALL](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/en/get_started.md#installation)]: for whole-to-part semantic segmentation (Type-I requests).
 
 - [AdelaiDet](https://github.com/aim-uofa/AdelaiDet) [[INSTALL](https://github.com/aim-uofa/AdelaiDet#installation)]: for instance segmentation (Type-II requests).
 
