@@ -29,11 +29,18 @@ pip install panoptic_parts
 
 - [ADE20K (with Parts)](https://groups.csail.mit.edu/vision/datasets/ADE20K/): [Download](http://sceneparsing.csail.mit.edu/) (images, semantic and instance annotations)
 
-Scripts for data processing: coming soon.
+Code for data processing will be coming soon.
+
+## Training and Inference
+
+- Whole-to-part semantic segmentation (Type-I requests): follow [train.md](https://github.com/chufengt/Visual-Recognition-by-Request/blob/main/whole-to-part-semantic-segmentation/docs/en/train.md) and [inference.md](https://github.com/chufengt/Visual-Recognition-by-Request/blob/main/whole-to-part-semantic-segmentation/docs/en/inference.md). See available configs (`whole-to-part-semantic-segmentation/configs/segmentation-by-request/`).
+
+- Instance segmentation (Type-II requests): follow [Quick-Start.md](https://github.com/aim-uofa/AdelaiDet#quick-start). See available configs (`instance-segmentation/configs/segmentation-by-request/`).
+
 
 ## Evaluation
 
-Code for evaluation (e.g., HPQ computation): coming soon.
+Code for evaluation (e.g., HPQ computation) will be coming soon.
 
 ## Reference
 
