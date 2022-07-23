@@ -1,4 +1,4 @@
-# Visual-Recognition-by-Request
+# Visual Recognition by Request
 
 Code for the paper "Visual Recognition by Request" [[arXiv]](https://arxiv.org/coming_soon).
 
@@ -36,6 +36,8 @@ Code for data processing will be coming soon.
 - Whole-to-part semantic segmentation (Type-I requests): follow [train.md](https://github.com/chufengt/Visual-Recognition-by-Request/blob/main/whole-to-part-semantic-segmentation/docs/en/train.md) and [inference.md](https://github.com/chufengt/Visual-Recognition-by-Request/blob/main/whole-to-part-semantic-segmentation/docs/en/inference.md). See available configs (`whole-to-part-semantic-segmentation/configs/segmentation-by-request/`).
 
 - Instance segmentation (Type-II requests): follow [Quick-Start.md](https://github.com/aim-uofa/AdelaiDet#quick-start). See available configs (`instance-segmentation/configs/segmentation-by-request/`).
+
+Checkpoints will be coming soon.
 
 
 ## Evaluation
