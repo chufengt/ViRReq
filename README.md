@@ -1,8 +1,8 @@
 # Visual Recognition by Request
 
-Code for the paper "Visual Recognition by Request" [[arXiv]](https://arxiv.org/coming_soon).
+Code for the paper "Visual Recognition by Request" [[arXiv]](https://arxiv.org/abs/2207.14227).
 
-Contact: chufeng.t@foxmail.com or tcf18@mails.tsinghua.edu.cn
+Contact: chufeng.t@foxmail.com
 
 **NOTE:** This release is currently a preliminary version, which could help you understand how the proposed algorithm works. We will release the complete version as well as the checkpoints in the near future.
 
