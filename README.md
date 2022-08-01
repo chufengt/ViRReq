@@ -52,7 +52,7 @@ If this project is useful to your research, please consider cite:
 @article{tang2022request,
   title={Visual Recognition by Request},
   author={Tang, Chufeng and Xie, Lingxi and Zhang, Xiaopeng and Hu, Xiaolin and Tian, Qi},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2207.14227},
   year={2022}
 }
 ```
